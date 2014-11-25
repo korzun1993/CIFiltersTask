@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W88-Xk-hza">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qRq-CL-BiC">
+            <objects>
+                <navigationController id="W88-Xk-hza" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GCg-2I-Xvq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KNp-mj-pdG" kind="relationship" relationship="rootViewController" id="Yh3-Tw-zHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RvQ-YG-ka1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="958"/>
+        </scene>
+        <!--Filters showcase-->
+        <scene sceneID="ox8-yx-4eE">
+            <objects>
+                <viewController id="KNp-mj-pdG" customClass="ViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="CaV-QZ-hgB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dcb-qE-EBH">
+                            <size key="itemSize" width="288" height="264"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="BDe-EQ-e7c" customClass="CIFilterCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="264"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2j-1h-tUb">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="e2j-1h-tUb" secondAttribute="trailing" id="0RY-h1-kk8"/>
+                                    <constraint firstItem="e2j-1h-tUb" firstAttribute="leading" secondItem="BDe-EQ-e7c" secondAttribute="leadingMargin" id="OgG-Oe-Xs8"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="e2j-1h-tUb" secondAttribute="bottom" id="kuq-oa-f0A"/>
+                                    <constraint firstItem="e2j-1h-tUb" firstAttribute="top" secondItem="BDe-EQ-e7c" secondAttribute="topMargin" id="nyK-CH-GpO"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="e2j-1h-tUb" id="qhJ-XU-inH"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="KNp-mj-pdG" id="JAl-ec-z04"/>
+                            <outlet property="delegate" destination="KNp-mj-pdG" id="xud-zN-RQp"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Filters showcase" id="gSq-IU-aBW">
+                        <barButtonItem key="rightBarButtonItem" title="Select photo" id="bs3-Zj-0Eh">
+                            <connections>
+                                <action selector="selectPhoto" destination="KNp-mj-pdG" id="JnS-JA-J0y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="CaV-QZ-hgB" id="wh4-JV-PNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeW-dp-RrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="958"/>
+        </scene>
+    </scenes>
+</document>
