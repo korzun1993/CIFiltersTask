@@ -15,7 +15,6 @@
 		D3FEE4E81A2505C4008C6250 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3FEE4E61A2505C4008C6250 /* LaunchScreen.xib */; };
 		D3FEE4F41A2505C4008C6250 /* CIFilterApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FEE4F31A2505C4008C6250 /* CIFilterApplicationTests.m */; };
 		D3FEE4FF1A250A21008C6250 /* CIFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FEE4FE1A250A21008C6250 /* CIFilterCell.m */; };
-		D3FEE5011A250B28008C6250 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FEE5001A250B28008C6250 /* image.png */; };
 		D3FEE5041A251236008C6250 /* UIImage+FiltredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FEE5031A251236008C6250 /* UIImage+FiltredImage.m */; };
 		D3FEE5071A251F98008C6250 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FEE5061A251F98008C6250 /* UIImage+Resize.m */; };
 /* End PBXBuildFile section */
@@ -46,7 +45,6 @@
 		D3FEE4F31A2505C4008C6250 /* CIFilterApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIFilterApplicationTests.m; sourceTree = "<group>"; };
 		D3FEE4FD1A250A21008C6250 /* CIFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIFilterCell.h; sourceTree = "<group>"; };
 		D3FEE4FE1A250A21008C6250 /* CIFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIFilterCell.m; sourceTree = "<group>"; };
-		D3FEE5001A250B28008C6250 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		D3FEE5021A251236008C6250 /* UIImage+FiltredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FiltredImage.h"; sourceTree = "<group>"; };
 		D3FEE5031A251236008C6250 /* UIImage+FiltredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FiltredImage.m"; sourceTree = "<group>"; };
 		D3FEE5051A251F98008C6250 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				D3FEE4E11A2505C4008C6250 /* Main.storyboard */,
 				D3FEE4FD1A250A21008C6250 /* CIFilterCell.h */,
 				D3FEE4FE1A250A21008C6250 /* CIFilterCell.m */,
-				D3FEE5001A250B28008C6250 /* image.png */,
 				D3FEE4E41A2505C4008C6250 /* Images.xcassets */,
 				D3FEE4E61A2505C4008C6250 /* LaunchScreen.xib */,
 				D3FEE4D71A2505C4008C6250 /* Supporting Files */,
@@ -220,7 +217,6 @@
 				D3FEE4E31A2505C4008C6250 /* Main.storyboard in Resources */,
 				D3FEE4E81A2505C4008C6250 /* LaunchScreen.xib in Resources */,
 				D3FEE4E51A2505C4008C6250 /* Images.xcassets in Resources */,
-				D3FEE5011A250B28008C6250 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +430,7 @@
 				D3FEE4F91A2505C4008C6250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3FEE4FA1A2505C4008C6250 /* Build configuration list for PBXNativeTarget "CIFilterApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +439,7 @@
 				D3FEE4FC1A2505C4008C6250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
